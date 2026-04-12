@@ -7,7 +7,7 @@ env/
 vectorstore/
 
 # ── Medical PDF (large file, add manually) ───────────────────────────────────
-data/
+# data/
 
 # ── Environment / secrets ─────────────────────────────────────────────────────
 .env
