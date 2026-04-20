@@ -13,7 +13,7 @@ db = FAISS.load_local(
 )
 
 def search_medical_docs(query: str) -> str:
-    docs = db.similarity_search(query, k=3)
+    docs = db.similarity_search(query, k=3) #retrieving top 3 relevant chunks for better context
     return "\n".join([d.page_content for d in docs])
 
 rag_tool = Tool(

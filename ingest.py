@@ -7,8 +7,8 @@ loader = PyPDFLoader("data/The_GALE_ENCYCLOPEDIA_of_MEDICINE_SECOND.pdf")
 documents = loader.load()
 
 splitter = RecursiveCharacterTextSplitter(
-    chunk_size=500,
-    chunk_overlap=100
+    chunk_size=350, #reduced chunk size for better context handling
+    chunk_overlap=100 #increased overlap to maintain context across chunks
 )
 docs = splitter.split_documents(documents)
 

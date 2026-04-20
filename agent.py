@@ -18,7 +18,7 @@ if not api_key:
 
 llm = ChatGroq(
     model="llama-3.3-70b-versatile",
-    temperature=0.3,
+    temperature=0.2, #reduced temperature for more focused responses
     api_key=SecretStr(api_key),
     stop_sequences=[],
 )
