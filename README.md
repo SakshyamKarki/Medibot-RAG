@@ -120,7 +120,7 @@ AI Agent  (Llama 3.3 70B via Groq)
 | LLM | Llama 3.3 70B (Groq Cloud) |
 | Agent framework | LangChain |
 | Vector store | FAISS |
-| Embeddings | sentence-transformers/all-MiniLM-L6-v2 |
+| Embeddings | sentence-transformers/all-mpnet-base-v2 |
 | PDF loading | PyPDF |
 | UI | Streamlit |
 
@@ -141,7 +141,7 @@ AI Agent  (Llama 3.3 70B via Groq)
 
 - The vector store (`vectorstore/`) and `data/` folder are excluded from git. Re-run `ingest.py` after cloning on a new machine.
 - The GROQ_API_KEY is never committed — always set it as an environment variable.
-- First run will download the embedding model (~90 MB) from HuggingFace automatically.
+- First run will download the embedding model (~400 MB) from HuggingFace automatically.
 
 ---
 

@@ -265,7 +265,7 @@ with st.sidebar:
     st.markdown(f"""
     <div class="stat-row"><span>Model</span><span class="stat-val">llama-3.3-70b</span></div>
     <div class="stat-row"><span>RAG Index</span><span class="stat-val">FAISS</span></div>
-    <div class="stat-row"><span>Embeddings</span><span class="stat-val">MiniLM-L6</span></div>
+    <div class="stat-row"><span>Embeddings</span><span class="stat-val">all-mpnet-base-v2</span></div>
     <div class="stat-row"><span>Messages</span><span class="stat-val">{st.session_state.msg_count}</span></div>
     """, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
